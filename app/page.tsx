@@ -1,6 +1,7 @@
 import { Activity, ArrowRight, HeartPulse, Stethoscope } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { HeroBeat } from "@/components/hero-beat";
 import { HeroHeartbeat } from "@/components/hero-heartbeat";
 import { Locations } from "@/components/locations";
 import { Reveal } from "@/components/reveal";
@@ -47,6 +48,7 @@ export default function HomePage() {
             >
               Patient info
             </Link>
+            <HeroBeat className="ml-10" />
           </div>
         </Reveal>
 

@@ -7,8 +7,7 @@ export const practice = {
   hours: ["Mon – Fri: 8:30 am – 5pm", "Saturday: Closed", "Sunday: Closed"],
   hcaProfile:
     "https://www.hcahoustonhealthcare.com/physicians/profile/Dr-Mushtaque-Ahmed-MD",
-  newPatientForms:
-    "https://static1.squarespace.com/static/673a91723674b61d29dfa4c4/t/67450b6ae30184590c43b60e/1732578156480/Adobe+Scan+Nov+20%2C+2024+%281%29.pdf",
+  newPatientForms: "/forms/new-patient-forms.pdf",
   echocardiogram: "http://www.cardiosmart.org/Healthwise/hw21/2692/hw212692",
 };
 

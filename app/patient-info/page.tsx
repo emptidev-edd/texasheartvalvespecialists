@@ -2,17 +2,11 @@ import { ArrowUpRight, FileText } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Locations } from "@/components/locations";
-import { RecordAccordion } from "@/components/record-accordion";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  conditions,
-  practice,
-  procedures,
-  tests,
-} from "@/lib/content";
+import { conditions, procedures, recordPolicies, tests } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -43,9 +37,7 @@ export default function PatientInfoPage() {
               our office.
             </p>
             <a
-              href={practice.newPatientForms}
-              target="_blank"
-              rel="noreferrer"
+              href="/patient-info/forms"
               className={cn(buttonVariants({ size: "lg" }), "mt-8 h-11 px-5")}
             >
               <FileText />
@@ -66,16 +58,41 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1360px] px-8 py-20">
-        <Reveal>
-          <h2 className="text-4xl text-navy">
-            Medical Record Access & Requests
-          </h2>
-          <p className="mt-3 text-base text-stone">
-            For more details, please contact our office.
-          </p>
-        </Reveal>
-        <RecordAccordion />
+      <section className="rounded-t-[40px] bg-white px-8 py-20 md:rounded-t-[60px] md:py-28">
+        <div className="mx-auto w-full max-w-5xl">
+          <Reveal>
+            <h2 className="text-center text-5xl leading-none tracking-tight text-navy uppercase md:text-7xl">
+              Medical Record Access & Requests
+            </h2>
+            <p className="mt-6 text-center text-base text-stone">
+              For more details, please contact our office.
+            </p>
+          </Reveal>
+          <div className="mt-16 md:mt-24">
+            {recordPolicies.map((policy, index) => (
+              <Reveal key={policy.title} delay={index * 0.08}>
+                <div
+                  className={cn(
+                    "flex items-start gap-6 border-b border-navy/15 py-10 md:gap-12 md:py-12",
+                    index === 0 && "border-t"
+                  )}
+                >
+                  <span className="shrink-0 text-6xl leading-none text-navy md:text-8xl">
+                    0{index + 1}
+                  </span>
+                  <div className="flex flex-col gap-3 pt-2">
+                    <h3 className="text-xl leading-tight text-navy uppercase md:text-3xl">
+                      {policy.title}
+                    </h3>
+                    <p className="max-w-2xl text-base leading-7 text-ink-soft">
+                      {policy.text}
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="border-y border-line bg-paper-raised">

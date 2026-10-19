@@ -11,11 +11,11 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo-mark-white.png"
+              src="/images/logo2.png"
               alt=""
-              width={52}
-              height={52}
-              className="size-12 object-contain"
+              width={64}
+              height={64}
+              className="size-14 object-contain"
             />
             <p className="font-heading text-2xl leading-none">
               Texas Heart

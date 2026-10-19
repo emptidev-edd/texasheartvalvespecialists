@@ -69,6 +69,9 @@ export default function BiographyPage() {
             Interventional cardiology, peripheral vascular disease, and
             structural heart disease
           </p>
+          <p className="mt-2 text-base text-crimson-deep">
+            Specialist in TAVR and Watchman (LAAO)
+          </p>
         </Reveal>
         <div>
           <Reveal>
@@ -79,6 +82,11 @@ export default function BiographyPage() {
                 cardiology, peripheral vascular disease, and structural heart
                 disease, Dr. Ahmed is committed to providing exceptional care
                 to patients throughout Conroe and The Woodlands, Texas.
+              </p>
+              <p>
+                Dr. Ahmed is a specialist in TAVR (transcatheter aortic valve
+                replacement) and Watchman (left atrial appendage occlusion)
+                procedures.
               </p>
               <p>
                 Dr. Ahmed completed rigorous fellowship training at several

@@ -66,11 +66,11 @@ export function SiteHeader() {
           <div className="mx-auto flex h-20 w-full max-w-[1360px] items-center gap-8 px-5 md:h-[88px] md:px-8">
             <Link href="/" className="flex shrink-0 items-center gap-3">
               <Image
-                src="/images/logo-mark.png"
+                src="/images/logo2.png"
                 alt="Texas Heart & Valve Specialists"
-                width={56}
-                height={56}
-                className="size-12 object-contain md:size-14"
+                width={64}
+                height={64}
+                className="size-14 object-contain md:size-16"
                 priority
               />
               <span className="leading-tight">

@@ -2,7 +2,7 @@ import { Activity, ArrowRight, HeartPulse, Stethoscope } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { HeroBeat } from "@/components/hero-beat";
-import { HeroHeartbeat } from "@/components/hero-heartbeat";
+import { HeroSlider } from "@/components/hero-slider";
 import { Locations } from "@/components/locations";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
@@ -19,15 +19,18 @@ const focus = [
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
+      <HeroSlider>
         <Reveal className="min-w-0">
-          <Badge variant="outline" className="h-7 border-line px-3 text-crimson-deep">
+          <Badge
+            variant="outline"
+            className="h-7 border-white/30 bg-white/10 px-3 text-white"
+          >
             Conroe · The Woodlands
           </Badge>
-          <h1 className="mt-6 max-w-xl text-[clamp(2.75rem,11vw,4.4rem)] leading-[0.95] tracking-tight text-balance text-navy">
+          <h1 className="mt-6 max-w-xl text-[clamp(2.75rem,11vw,4.4rem)] leading-[0.95] tracking-tight text-balance text-white">
             Where your heart, matters.
           </h1>
-          <p className="mt-6 max-w-lg text-base leading-7 text-ink-muted">
+          <p className="mt-6 max-w-lg text-base leading-7 text-white/85">
             Combining compassion with technology, Texas Heart & Valve
             Specialists are here for all of your cardiac needs.
           </p>
@@ -43,7 +46,7 @@ export default function HomePage() {
               href="/patient-info"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "h-11 border-line-soft bg-transparent px-5"
+                "h-11 border-white/40 bg-white/10 px-5 text-white hover:bg-white/20 hover:text-white"
               )}
             >
               Patient info
@@ -51,20 +54,7 @@ export default function HomePage() {
             <HeroBeat className="ml-3 sm:ml-10" />
           </div>
         </Reveal>
-
-        <Reveal delay={0.1} className="min-w-0">
-          <HeroHeartbeat>
-            <Image
-              src="/images/hero-consult.jpg"
-              alt="Doctor and Patient, Take care of your heart with Dr. Mushtaque Ahmed, Texas Heart & Valve Specialist, Conroe, The Woodlands, Texas"
-              fill
-              priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 720px, 100vw"
-            />
-          </HeroHeartbeat>
-        </Reveal>
-      </section>
+      </HeroSlider>
 
       <section className="border-y border-line bg-paper-raised">
         <div className="mx-auto grid w-full max-w-[1360px] md:grid-cols-3">
@@ -77,6 +67,57 @@ export default function HomePage() {
               <h2 className="text-xl text-navy">{item.title}</h2>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-navy-deep text-cream">
+        <div className="mx-auto w-full max-w-[1360px] px-5 py-14 sm:px-8 sm:py-20">
+          <Reveal>
+            <p className="text-[11px] tracking-[0.2em] text-blush-soft uppercase">
+              Structural heart
+            </p>
+            <h2 className="mt-3 max-w-3xl text-4xl leading-tight text-balance sm:text-5xl">
+              Dr. Ahmed specializes in TAVR and Watchman.
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-cream/85">
+              Mushtaque Ahmed, MD, performs these structural heart procedures
+              and is a specialist in both.
+            </p>
+          </Reveal>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <Reveal>
+              <div className="h-full border border-white/20 bg-white/10 px-6 py-7">
+                <p className="text-xs tracking-[0.16em] text-blush-soft uppercase">
+                  TAVR
+                </p>
+                <p className="mt-3 text-2xl leading-snug">
+                  Transcatheter aortic valve replacement
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <div className="h-full border border-white/20 bg-white/10 px-6 py-7">
+                <p className="text-xs tracking-[0.16em] text-blush-soft uppercase">
+                  Watchman
+                </p>
+                <p className="mt-3 text-2xl leading-snug">
+                  Left atrial appendage occlusion (LAAO)
+                </p>
+              </div>
+            </Reveal>
+          </div>
+          <Reveal>
+            <Link
+              href="/contact"
+              className={cn(
+                buttonVariants({ variant: "secondary", size: "lg" }),
+                "mt-8 h-11 px-5"
+              )}
+            >
+              Contact the office
+              <ArrowRight />
+            </Link>
+          </Reveal>
         </div>
       </section>
 
@@ -104,6 +145,11 @@ export default function HomePage() {
               peripheral vascular disease, and structural heart disease, Dr.
               Ahmed & Dr. Mobley are committed to providing exceptional care to
               patients throughout Conroe and The Woodlands, Texas.
+            </p>
+            <p>
+              Dr. Ahmed is a specialist in TAVR (transcatheter aortic valve
+              replacement) and Watchman (left atrial appendage occlusion)
+              procedures.
             </p>
             <p>
               With a passion for improving patient outcomes and a dedication to

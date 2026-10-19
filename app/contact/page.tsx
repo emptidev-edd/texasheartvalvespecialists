@@ -8,7 +8,7 @@ import { locations, practice } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Call, fax, or visit Texas Heart & Valve Specialists in Conroe and The Woodlands.",
+    "Call, fax, or visit Texas Heart & Valve Specialists in Conroe, The Woodlands, and Willis.",
 };
 
 export default function ContactPage() {

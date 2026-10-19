@@ -180,7 +180,7 @@ export function SiteHeader() {
           showDock ? "translate-y-0" : "translate-y-full"
         )}
       >
-        <div className="flex items-center justify-around px-4 py-3">
+        <div className="flex items-center justify-around px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           <a
             href={`mailto:${practice.email}`}
             className="flex flex-col items-center text-white"

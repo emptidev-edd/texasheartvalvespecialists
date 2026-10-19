@@ -24,15 +24,15 @@ export default function ContactPage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/85 via-navy-deep/45 to-transparent" />
-        <div className="relative mx-auto flex w-full max-w-[1360px] flex-col justify-end px-8 py-16">
+        <div className="relative mx-auto flex w-full max-w-[1360px] flex-col justify-end px-5 py-12 sm:px-8 sm:py-16">
           <p className="text-[11px] tracking-[0.2em] text-blush-soft uppercase">
             We are here
           </p>
-          <h1 className="mt-3 text-6xl text-cream">Contact</h1>
+          <h1 className="mt-3 text-5xl text-cream sm:text-6xl">Contact</h1>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1360px] px-8 py-16">
+      <section className="mx-auto w-full min-w-0 max-w-[1360px] px-5 py-12 sm:px-8 sm:py-16">
         <Reveal>
           <h2 className="text-4xl text-navy">Practice Locations</h2>
         </Reveal>
@@ -100,9 +100,9 @@ export default function ContactPage() {
       </section>
 
       <section className="pb-20">
-        <div className="mx-auto w-full max-w-[1360px] px-8">
+        <div className="mx-auto w-full max-w-[1360px] px-5 sm:px-8">
           <Reveal>
-            <div className="flex items-start gap-5 border border-line bg-navy px-8 py-8 text-cream">
+            <div className="flex items-start gap-4 border border-line bg-navy px-5 py-8 text-cream sm:gap-5 sm:px-8">
               <ShieldCheck className="mt-1 size-6 shrink-0 text-blush" />
               <div>
                 <h2 className="text-3xl">Insurance</h2>

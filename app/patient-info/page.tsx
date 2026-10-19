@@ -19,7 +19,7 @@ export default function PatientInfoPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto grid w-full max-w-[1360px] items-center gap-12 px-8 py-16 lg:grid-cols-[1.1fr_0.7fr]">
+        <div className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[1.1fr_0.7fr]">
           <Reveal>
             <Badge
               variant="outline"
@@ -27,7 +27,7 @@ export default function PatientInfoPage() {
             >
               Now accepting new referrals
             </Badge>
-            <h1 className="mt-4 text-6xl text-navy">Patient Info</h1>
+            <h1 className="mt-4 text-5xl text-navy sm:text-6xl">Patient Info</h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-ink-soft">
               Texas Heart & Valve Specialists is now accepting new referrals.
               Our experienced team provides comprehensive cardiovascular care
@@ -58,10 +58,10 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="rounded-t-[40px] bg-white px-8 py-20 md:rounded-t-[60px] md:py-28">
+      <section className="rounded-t-[40px] bg-white px-5 py-16 sm:px-8 sm:py-20 md:rounded-t-[60px] md:py-28">
         <div className="mx-auto w-full max-w-5xl">
           <Reveal>
-            <h2 className="text-center text-5xl leading-none tracking-tight text-navy uppercase md:text-7xl">
+            <h2 className="text-center text-4xl leading-none tracking-tight text-balance text-navy uppercase sm:text-5xl md:text-7xl">
               Medical Record Access & Requests
             </h2>
             <p className="mt-6 text-center text-base text-stone">
@@ -73,15 +73,15 @@ export default function PatientInfoPage() {
               <Reveal key={policy.title} delay={index * 0.08}>
                 <div
                   className={cn(
-                    "flex items-start gap-6 border-b border-navy/15 py-10 md:gap-12 md:py-12",
+                    "flex min-w-0 items-start gap-4 border-b border-navy/15 py-8 sm:gap-6 sm:py-10 md:gap-12 md:py-12",
                     index === 0 && "border-t"
                   )}
                 >
-                  <span className="shrink-0 text-6xl leading-none text-navy md:text-8xl">
+                  <span className="shrink-0 text-5xl leading-none text-navy sm:text-6xl md:text-8xl">
                     0{index + 1}
                   </span>
-                  <div className="flex flex-col gap-3 pt-2">
-                    <h3 className="text-xl leading-tight text-navy uppercase md:text-3xl">
+                  <div className="flex min-w-0 flex-col gap-3 pt-1 sm:pt-2">
+                    <h3 className="text-lg leading-tight text-balance text-navy uppercase sm:text-xl md:text-3xl">
                       {policy.title}
                     </h3>
                     <p className="max-w-2xl text-base leading-7 text-ink-soft">
@@ -96,7 +96,7 @@ export default function PatientInfoPage() {
       </section>
 
       <section className="border-y border-line bg-paper-raised">
-        <div className="mx-auto grid w-full max-w-[1360px] gap-12 px-8 py-20 lg:grid-cols-3">
+        <div className="mx-auto grid w-full min-w-0 max-w-[1360px] gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-3">
           <Reveal>
             <h2 className="text-3xl text-navy">Conditions</h2>
             <ul className="mt-6 space-y-3">
@@ -126,7 +126,7 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1360px] px-8 py-20">
+      <section className="mx-auto w-full max-w-[1360px] px-5 py-16 sm:px-8 sm:py-20">
         <Reveal>
           <h2 className="text-4xl text-navy">Tests</h2>
         </Reveal>

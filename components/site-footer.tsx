@@ -7,7 +7,7 @@ import { locations, nav, practice } from "@/lib/content";
 export function SiteFooter() {
   return (
     <footer className="bg-navy-deep text-paper">
-      <div className="mx-auto grid w-full max-w-[1360px] gap-12 px-8 py-16 lg:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="mx-auto grid w-full max-w-[1360px] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
             <Image
@@ -97,7 +97,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/10 pb-20 md:pb-0">
-        <p className="mx-auto w-full max-w-[1360px] px-8 py-5 text-xs tracking-wide text-paper/55">
+        <p className="mx-auto w-full max-w-[1360px] px-5 py-5 pb-24 text-xs tracking-wide text-paper/55 sm:px-8 md:pb-5">
           <Copyright />
         </p>
       </div>

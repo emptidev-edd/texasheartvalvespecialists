@@ -10,7 +10,7 @@ export function Locations({
 }) {
   return (
     <section className="bg-paper py-20">
-      <div className="mx-auto w-full max-w-[1360px] px-8">
+      <div className="mx-auto w-full min-w-0 max-w-[1360px] px-5 sm:px-8">
         <Reveal>
           <p className="text-[11px] tracking-[0.2em] text-crimson-deep uppercase">
             Conroe & The Woodlands

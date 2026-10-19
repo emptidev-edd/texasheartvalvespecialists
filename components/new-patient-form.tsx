@@ -61,7 +61,7 @@ function Check({
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="border border-line bg-paper-raised p-6">
+    <section className="border border-line bg-paper-raised p-4 sm:p-6">
       <h2 className="text-2xl text-navy">{title}</h2>
       <div className="mt-6">{children}</div>
     </section>

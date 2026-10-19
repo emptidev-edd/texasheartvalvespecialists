@@ -39,12 +39,12 @@ export default function BiographyPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto flex w-full max-w-[1360px] items-end justify-between gap-10 px-8 py-16">
+        <div className="mx-auto flex w-full max-w-[1360px] flex-col items-start gap-6 px-5 py-12 sm:px-8 sm:py-16 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-[11px] tracking-[0.2em] text-crimson-deep uppercase">
               Our physicians
             </p>
-            <h1 className="mt-3 text-6xl text-navy">Biography</h1>
+            <h1 className="mt-3 text-5xl text-navy sm:text-6xl">Biography</h1>
           </div>
           <p className="max-w-sm text-base leading-7 text-stone-soft">
             Expertise, training, and a compassionate approach to cardiac care
@@ -53,7 +53,7 @@ export default function BiographyPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1360px] gap-14 px-8 py-20 lg:grid-cols-[340px_1fr]">
+      <section className="mx-auto grid w-full min-w-0 max-w-[1360px] gap-14 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[340px_1fr]">
         <Reveal>
           <Image
             src="/Mushtaque Ahmed.JPG"
@@ -144,7 +144,7 @@ export default function BiographyPage() {
       </section>
 
       <section className="border-y border-line bg-paper-raised">
-        <div className="mx-auto grid w-full max-w-[1360px] gap-14 px-8 py-20 lg:grid-cols-[1fr_300px]">
+        <div className="mx-auto grid w-full min-w-0 max-w-[1360px] gap-14 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1fr_300px]">
           <div>
             <Reveal>
               <p className="font-heading text-3xl text-navy">
@@ -222,7 +222,7 @@ export default function BiographyPage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1360px] px-8 py-20">
+      <section className="mx-auto w-full max-w-[1360px] px-5 py-16 sm:px-8 sm:py-20">
         <Reveal>
           <h2 className="text-4xl text-navy">Awards</h2>
         </Reveal>

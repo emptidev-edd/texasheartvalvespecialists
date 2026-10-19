@@ -19,19 +19,19 @@ const focus = [
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto grid w-full max-w-[1360px] items-center gap-12 px-8 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
-        <Reveal>
+      <section className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
+        <Reveal className="min-w-0">
           <Badge variant="outline" className="h-7 border-line px-3 text-crimson-deep">
             Conroe · The Woodlands
           </Badge>
-          <h1 className="mt-6 max-w-xl text-[4.4rem] leading-[0.95] tracking-tight text-navy">
+          <h1 className="mt-6 max-w-xl text-[clamp(2.75rem,11vw,4.4rem)] leading-[0.95] tracking-tight text-balance text-navy">
             Where your heart, matters.
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-ink-muted">
             Combining compassion with technology, Texas Heart & Valve
             Specialists are here for all of your cardiac needs.
           </p>
-          <div className="mt-8 flex items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/contact"
               className={cn(buttonVariants({ size: "lg" }), "h-11 px-5")}
@@ -48,11 +48,11 @@ export default function HomePage() {
             >
               Patient info
             </Link>
-            <HeroBeat className="ml-10" />
+            <HeroBeat className="ml-3 sm:ml-10" />
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>
+        <Reveal delay={0.1} className="min-w-0">
           <HeroHeartbeat>
             <Image
               src="/images/hero-consult.jpg"
@@ -71,7 +71,7 @@ export default function HomePage() {
           {focus.map((item) => (
             <div
               key={item.title}
-              className="flex gap-4 border-line px-8 py-8 md:border-r last:md:border-r-0"
+              className="flex gap-4 border-line px-5 py-8 sm:px-8 md:border-r last:md:border-r-0"
             >
               <item.icon className="size-5 shrink-0 text-crimson" />
               <h2 className="text-xl text-navy">{item.title}</h2>
@@ -80,7 +80,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1360px] items-center gap-14 px-8 py-24 lg:grid-cols-[0.82fr_1.18fr]">
+      <section className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-14 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.82fr_1.18fr]">
         <Reveal>
           <div className="relative mx-auto max-w-md overflow-hidden rounded-2xl">
             <Image
@@ -96,7 +96,7 @@ export default function HomePage() {
           <p className="text-[11px] tracking-[0.2em] text-crimson-deep uppercase">
             Physicians
           </p>
-          <h2 className="mt-3 text-5xl text-navy">About Dr. Ahmed</h2>
+          <h2 className="mt-3 text-4xl text-navy sm:text-5xl">About Dr. Ahmed</h2>
           <div className="mt-6 space-y-4 text-base leading-7 text-ink-soft">
             <p>
               Mushtaque Ahmed, MD, brings expertise and training to Texas Heart
@@ -142,12 +142,12 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-navy-deep/55" />
-        <div className="relative mx-auto w-full max-w-[1360px] px-8 py-24">
+        <div className="relative mx-auto w-full max-w-[1360px] px-5 py-16 sm:px-8 sm:py-24">
           <Reveal>
             <p className="text-[11px] tracking-[0.2em] text-blush-soft uppercase">
               Care
             </p>
-            <h2 className="mt-3 text-5xl">Areas of Expertise</h2>
+            <h2 className="mt-3 text-4xl sm:text-5xl">Areas of Expertise</h2>
           </Reveal>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {featuredProcedures.map((procedure, index) => (

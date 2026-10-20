@@ -70,57 +70,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-navy-deep text-cream">
-        <div className="mx-auto w-full max-w-[1360px] px-5 py-14 sm:px-8 sm:py-20">
-          <Reveal>
-            <p className="text-[11px] tracking-[0.2em] text-blush-soft uppercase">
-              Structural heart
-            </p>
-            <h2 className="mt-3 max-w-3xl text-4xl leading-tight text-balance sm:text-5xl">
-              Dr. Ahmed specializes in TAVR and Watchman.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-cream/85">
-              Mushtaque Ahmed, MD, performs these structural heart procedures
-              and is a specialist in both.
-            </p>
-          </Reveal>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <Reveal>
-              <div className="h-full border border-white/20 bg-white/10 px-6 py-7">
-                <p className="text-xs tracking-[0.16em] text-blush-soft uppercase">
-                  TAVR
-                </p>
-                <p className="mt-3 text-2xl leading-snug">
-                  Transcatheter aortic valve replacement
-                </p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <div className="h-full border border-white/20 bg-white/10 px-6 py-7">
-                <p className="text-xs tracking-[0.16em] text-blush-soft uppercase">
-                  Watchman
-                </p>
-                <p className="mt-3 text-2xl leading-snug">
-                  Left atrial appendage occlusion (LAAO)
-                </p>
-              </div>
-            </Reveal>
-          </div>
-          <Reveal>
-            <Link
-              href="/contact"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "lg" }),
-                "mt-8 h-11 px-5"
-              )}
-            >
-              Contact the office
-              <ArrowRight />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
       <section className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-14 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[0.82fr_1.18fr]">
         <Reveal>
           <div className="relative mx-auto max-w-md overflow-hidden rounded-2xl">

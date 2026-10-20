@@ -73,15 +73,19 @@ export const conditions = [
 ];
 
 export const procedures = [
+  "Abdominal Aortic Ultrasound",
   "AICD Generator Procedures",
   "AICD Lead Procedures",
+  "Arterial",
   "Audioelectric Cardiography",
   "Balloon Angioplasty",
   "Cardiac Catheterization",
   "Cardiac CT Angiography",
   "Cardiovascular Stress Test",
   "Cardioversion",
+  "Carotid",
   "Diagnostic Cardiac Catheterization",
+  "Doppler",
   "EKG",
   "Electrocardiogram",
   "Electrocardiogram Monitoring",
@@ -100,6 +104,8 @@ export const procedures = [
   "Sympathectomy - Radial Artery",
   "TAVR (Transcatheter Aortic Valve Replacement)",
   "Transesophageal Echocardiography",
+  "Vein Ablation",
+  "Venous",
 ];
 
 export const tests = [

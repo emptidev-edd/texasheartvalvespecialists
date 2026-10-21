@@ -105,17 +105,16 @@ export default function PatientInfoPage() {
           <Reveal>
             <h2 className="text-4xl text-navy">Specified Procedures</h2>
           </Reveal>
-          <ol className="mt-8 grid gap-3 sm:grid-cols-3">
-            {specifiedProcedures.map((item, index) => (
+          <ul className="mt-8 grid gap-3 sm:grid-cols-3">
+            {specifiedProcedures.map((item) => (
               <li
                 key={item}
                 className="bg-paper px-4 py-4 text-base text-ink"
               >
-                <span className="mr-2 text-crimson">{index + 1}.</span>
                 {item}
               </li>
             ))}
-          </ol>
+          </ul>
           <div className="mt-14 grid gap-12 lg:grid-cols-3">
             <Reveal>
               <h2 className="text-3xl text-navy">Conditions</h2>

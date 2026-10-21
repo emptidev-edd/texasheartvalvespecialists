@@ -73,19 +73,15 @@ export const conditions = [
 ];
 
 export const procedures = [
-  "Abdominal Aortic Ultrasound",
   "AICD Generator Procedures",
   "AICD Lead Procedures",
-  "Arterial",
   "Audioelectric Cardiography",
   "Balloon Angioplasty",
   "Cardiac Catheterization",
   "Cardiac CT Angiography",
   "Cardiovascular Stress Test",
   "Cardioversion",
-  "Carotid",
   "Diagnostic Cardiac Catheterization",
-  "Doppler",
   "EKG",
   "Electrocardiogram",
   "Electrocardiogram Monitoring",
@@ -105,7 +101,6 @@ export const procedures = [
   "TAVR (Transcatheter Aortic Valve Replacement)",
   "Transesophageal Echocardiography",
   "Vein Ablation",
-  "Venous",
 ];
 
 export const tests = [
@@ -138,8 +133,20 @@ export const tests = [
     text: "Nuclear imaging uses a small amount of tracer in the bloodstream and a special camera to show blood flow to the heart muscle. Pictures are taken at rest and after exercise, or after medicine that mimics exercise, to look for areas that are not getting enough blood.",
   },
   {
-    name: "Cardiac catheterisation",
-    text: "Cardiac catheterisation uses a thin, flexible tube placed into a blood vessel in the wrist or groin and guided to the heart. Dye and X-rays can show the coronary arteries and the valves. Treatment, such as opening a narrowed artery, can sometimes be done during the same visit.",
+    name: "Cardiac catheterization",
+    text: "Cardiac catheterization uses a thin, flexible tube placed into a blood vessel in the wrist or groin and guided to the heart. Dye and X-rays can show the coronary arteries and the valves. Treatment, such as opening a narrowed artery, can sometimes be done during the same visit.",
+  },
+  {
+    name: "Carotid Doppler",
+    text: "A carotid Doppler uses sound waves to look at the arteries on each side of the neck that carry blood to the brain. Gel is placed on the skin and a probe is moved along the neck. It shows whether an artery is narrowed or blocked and how the blood is flowing. Narrowing there can raise the risk of stroke. The test is painless and does not use radiation.",
+  },
+  {
+    name: "Venous Reflux Ultrasound",
+    text: "A venous reflux ultrasound looks at the veins in the legs and the valves that keep blood moving toward the heart. You usually stand while a probe is moved over the leg. It shows whether blood is flowing backward, which can lead to aching, swelling, or varicose veins. The test is painless.",
+  },
+  {
+    name: "Venous Doppler",
+    text: "A venous Doppler uses sound waves to look at blood flow in the veins, most often in the legs. Gel is placed on the skin and a probe is moved along the vein. It is used to look for a clot, a blocked vein, or blood moving the wrong way. The test is painless and does not use radiation.",
   },
 ];
 

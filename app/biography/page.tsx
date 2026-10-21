@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Biography",
   description:
-    "Meet Mushtaque Ahmed, MD and Alan Mobley, MD of Texas Heart & Valve Specialists in Conroe and The Woodlands.",
+    "Meet Mushtaque Ahmed, MD and Alan Mobley, MD of Texas Heart & Valve Specialists in Conroe, The Woodlands, and Willis.",
 };
 
 const ahmedTraining = [
@@ -48,7 +48,7 @@ export default function BiographyPage() {
           </div>
           <p className="max-w-sm text-base leading-7 text-stone-soft">
             Expertise, training, and a compassionate approach to cardiac care
-            in Conroe and The Woodlands.
+            in Conroe, The Woodlands, and Willis.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function BiographyPage() {
                 Heart & Valve Specialists. With a focus on interventional
                 cardiology, peripheral vascular disease, and structural heart
                 disease, Dr. Ahmed is committed to providing exceptional care
-                to patients throughout Conroe and The Woodlands, Texas.
+                to patients throughout Conroe, The Woodlands, and Willis, Texas.
               </p>
               <p>
                 Dr. Ahmed is a specialist in TAVR (transcatheter aortic valve

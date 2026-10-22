@@ -41,13 +41,25 @@ export default function PatientInfoPage() {
               excellence in cardiac care. For referral inquiries, please contact
               our office.
             </p>
-            <a
-              href="/patient-info/forms"
-              className={cn(buttonVariants({ size: "lg" }), "mt-8 h-11 px-5")}
-            >
-              <FileText />
-              New Patient Forms
-            </a>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="/patient-info/forms"
+                className={cn(buttonVariants({ size: "lg" }), "h-11 px-5")}
+              >
+                <FileText />
+                New Patient Forms
+              </a>
+              <a
+                href="/patient-info/no-show"
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "lg" }),
+                  "h-11 px-5"
+                )}
+              >
+                <FileText />
+                No-Show Fee Policy
+              </a>
+            </div>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="bg-paper-raised p-6">

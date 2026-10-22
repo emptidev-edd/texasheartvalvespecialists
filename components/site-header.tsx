@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, Menu, Phone, Printer, X } from "lucide-react";
+import { CreditCard, Mail, MapPin, Menu, Phone, Printer, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -123,6 +123,17 @@ export function SiteHeader() {
                   </Link>
                 );
               })}
+              <a
+                href={practice.payBill}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "ml-2 h-10 px-5"
+                )}
+              >
+                Pay my bill
+              </a>
             </nav>
 
             <button
@@ -169,6 +180,17 @@ export function SiteHeader() {
                   </Link>
                 );
               })}
+              <a
+                href={practice.payBill}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "mt-3 h-11 w-full"
+                )}
+              >
+                Pay my bill
+              </a>
             </nav>
           ) : null}
         </div>
@@ -186,23 +208,32 @@ export function SiteHeader() {
             className="flex flex-col items-center text-white"
           >
             <Mail className="size-5 text-white" />
-            <span className="mt-1 text-xs">Email</span>
+            <span className="mt-1 text-center text-[11px] leading-tight">Email</span>
           </a>
           <a
             href={practice.phoneHref}
             className="flex flex-col items-center text-white"
           >
             <Phone className="size-5 text-white" />
-            <span className="mt-1 text-xs">Call</span>
+            <span className="mt-1 text-center text-[11px] leading-tight">Call</span>
           </a>
           <a
             href={locations[0].map}
             target="_blank"
             rel="noreferrer"
-            className="flex flex-col items-center text-white"
+            className="flex flex-col items-center text-center text-white"
           >
             <MapPin className="size-5 text-white" />
-            <span className="mt-1 text-xs">Directions</span>
+            <span className="mt-1 text-[11px] leading-tight">Directions</span>
+          </a>
+          <a
+            href={practice.payBill}
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center text-center text-white"
+          >
+            <CreditCard className="size-5 text-white" />
+            <span className="mt-1 text-[11px] leading-tight">Pay my bill</span>
           </a>
         </div>
       </div>

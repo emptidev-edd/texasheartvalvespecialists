@@ -8,6 +8,7 @@ export const practice = {
   hcaProfile:
     "https://www.hcahoustonhealthcare.com/physicians/profile/Dr-Mushtaque-Ahmed-MD",
   newPatientForms: "/forms/new-patient-forms.pdf",
+  payBill: "https://healowpay.com/HealowPay/jsp/healow/login.jsp",
   echocardiogram: "http://www.cardiosmart.org/Healthwise/hw21/2692/hw212692",
 };
 

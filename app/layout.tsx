@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Texas Heart",
   },
   description:
-    "Combining compassion with technology, Texas Heart & Valve Specialists are here for all of your cardiac needs in Conroe and The Woodlands, Texas.",
+    "Combining compassion with technology, Texas Heart & Valve Specialists are here for all of your cardiac needs in Conroe, The Woodlands, Willis, and Spring, Texas.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

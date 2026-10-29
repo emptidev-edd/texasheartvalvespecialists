@@ -3,7 +3,7 @@ export const practice = {
   phone: "(346) 242-8344",
   phoneHref: "tel:+13462428344",
   fax: "(866) 531-9603",
-  email: "info@texasheartvalvespecialist.org",
+  email: "texasheart24@gmail.com",
   hours: ["Mon – Fri: 8:00 am – 5pm", "Saturday: Closed", "Sunday: Closed"],
   hcaProfile:
     "https://www.hcahoustonhealthcare.com/physicians/profile/Dr-Mushtaque-Ahmed-MD",
@@ -35,12 +35,38 @@ export const locations = [
     lines: ["9851 FM 1097 Rd West", "Ste 120", "Willis, TX 77318"],
     map: "https://maps.google.com/?q=9851+FM+1097+Rd+West+Ste+120+Willis+TX+77318",
   },
+  {
+    name: "Spring",
+    lines: ["5039 Farm to Market 2920", "Spring, TX 77388"],
+    map: "https://maps.google.com/?q=5039+Farm+to+Market+2920+Spring+TX+77388",
+  },
 ] as const;
 
-export const featuredProcedures = [
-  "AICD Generator Procedures",
-  "AICD Lead Procedures",
-  "Audioelectric Cardiography",
+export const featuredProcedures = ["Vein Ablation"];
+
+export const insurers = [
+  "6 Degree",
+  "AARP Medicare Advantage",
+  "Aetna",
+  "Aetna Medicare",
+  "Ambetter",
+  "Blue Cross Blue Shield",
+  "Boon-Chapman",
+  "CHAMPVA",
+  "Cigna",
+  "Devoted",
+  "First Health Network",
+  "GEHA",
+  "Healthy Women HTW Medicaid",
+  "Humana",
+  "Medicare",
+  "Molina",
+  "Oscar",
+  "Superior Health Plan Medicaid",
+  "Tricare",
+  "United Healthcare",
+  "WellCare",
+  "WellPoint",
 ];
 
 export const specifiedProcedures = [
@@ -74,9 +100,6 @@ export const conditions = [
 ];
 
 export const procedures = [
-  "AICD Generator Procedures",
-  "AICD Lead Procedures",
-  "Audioelectric Cardiography",
   "Balloon Angioplasty",
   "Cardiac Catheterization",
   "Cardiac CT Angiography",
@@ -153,23 +176,23 @@ export const tests = [
 
 export const recordPolicies = [
   {
-    title: "Review medical records",
-    text: "Patients may review their medical records by scheduling an appointment. The first 15 minutes are free; additional time is billed at $25 per 15 minutes.",
+    title: "Review records",
+    text: "Schedule a visit. The first 15 minutes are free. After that, $25 per 15 minutes.",
   },
   {
-    title: "Request chart revisions",
-    text: "Patients may request chart revisions in writing. Approved changes or reasons for denial will be documented in their record.",
+    title: "Chart changes",
+    text: "Ask in writing. The chart will note the change or why it was not made.",
   },
   {
-    title: "Sending records",
-    text: "Records can be sent to physicians free of charge with patient authorization. Written consent is preferred, though phone authorization may be accepted in urgent cases.",
+    title: "Records to a doctor",
+    text: "Free with your permission. Written consent is preferred.",
   },
   {
-    title: "Insurance companies and attorneys",
-    text: "Insurance companies and attorneys must provide signed authorization and prepay fees based on chart size before records are released.",
+    title: "Insurance and attorneys",
+    text: "They need a signed release and must pay the copy fee before records go out.",
   },
   {
-    title: "How to get copies of records",
-    text: "Patients may request copies of their records. The first 25 pages cost $25, with additional pages charged at $0.10 each. Processing typically takes up to two weeks.",
+    title: "Your copies",
+    text: "The first 25 pages are $25. Each page after that is $0.10. Allow up to two weeks.",
   },
 ];

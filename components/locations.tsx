@@ -13,7 +13,7 @@ export function Locations({
       <div className="mx-auto w-full min-w-0 max-w-[1360px] px-5 sm:px-8">
         <Reveal>
           <p className="text-[11px] tracking-[0.2em] text-crimson-deep uppercase">
-            Conroe, The Woodlands & Willis
+            Conroe, The Woodlands, Willis & Spring
           </p>
           <h2 className="mt-3 text-4xl text-navy">{title}</h2>
         </Reveal>

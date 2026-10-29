@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import {
   conditions,
+  insurers,
   procedures,
   recordPolicies,
   specifiedProcedures,
@@ -75,40 +76,40 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="rounded-t-[40px] bg-white px-5 py-16 sm:px-8 sm:py-20 md:rounded-t-[60px] md:py-28">
-        <div className="mx-auto w-full max-w-5xl">
+      <section className="border-b border-line bg-paper">
+        <div className="mx-auto w-full min-w-0 max-w-[1360px] px-5 py-12 sm:px-8 sm:py-14">
           <Reveal>
-            <h2 className="text-center text-4xl leading-none tracking-tight text-balance text-navy uppercase sm:text-5xl md:text-7xl">
-              Medical Record Access & Requests
-            </h2>
-            <p className="mt-6 text-center text-base text-stone">
-              For more details, please contact our office.
+            <h2 className="text-3xl text-navy">Insurance</h2>
+            <p className="mt-3 max-w-2xl text-base leading-7 text-ink-soft">
+              Plans accepted, listed A to Z.
             </p>
           </Reveal>
-          <div className="mt-16 md:mt-24">
-            {recordPolicies.map((policy, index) => (
-              <Reveal key={policy.title} delay={index * 0.08}>
-                <div
-                  className={cn(
-                    "flex min-w-0 items-start gap-4 border-b border-navy/15 py-8 sm:gap-6 sm:py-10 md:gap-12 md:py-12",
-                    index === 0 && "border-t"
-                  )}
-                >
-                  <span className="shrink-0 text-5xl leading-none text-navy sm:text-6xl md:text-8xl">
-                    0{index + 1}
-                  </span>
-                  <div className="flex min-w-0 flex-col gap-3 pt-1 sm:pt-2">
-                    <h3 className="text-lg leading-tight text-balance text-navy uppercase sm:text-xl md:text-3xl">
-                      {policy.title}
-                    </h3>
-                    <p className="max-w-2xl text-base leading-7 text-ink-soft">
-                      {policy.text}
-                    </p>
-                  </div>
-                </div>
-              </Reveal>
+          <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {insurers.map((item) => (
+              <li key={item} className="border-b border-line py-2 text-base text-ink">
+                {item}
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-12 sm:px-8 sm:py-14">
+        <div className="mx-auto w-full max-w-3xl">
+          <Reveal>
+            <h2 className="text-3xl text-navy">Medical records</h2>
+            <p className="mt-3 text-base leading-7 text-ink-soft">
+              Call the office if you need more detail.
+            </p>
+          </Reveal>
+          <ul className="mt-6">
+            {recordPolicies.map((policy) => (
+              <li key={policy.title} className="border-b border-line py-4">
+                <h3 className="text-lg text-navy">{policy.title}</h3>
+                <p className="mt-1 text-base leading-7 text-ink-soft">{policy.text}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

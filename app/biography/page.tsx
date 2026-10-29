@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Biography",
   description:
-    "Meet Mushtaque Ahmed, MD and Alan Mobley, MD of Texas Heart & Valve Specialists in Conroe, The Woodlands, and Willis.",
+    "Meet Mushtaque Ahmed, MD and Alan Mobley, MD of Texas Heart & Valve Specialists in Conroe, The Woodlands, Willis, and Spring.",
 };
 
 const ahmedTraining = [
@@ -48,7 +48,7 @@ export default function BiographyPage() {
           </div>
           <p className="max-w-sm text-base leading-7 text-stone-soft">
             Expertise, training, and a compassionate approach to cardiac care
-            in Conroe, The Woodlands, and Willis.
+            in Conroe, The Woodlands, Willis, and Spring.
           </p>
         </div>
       </section>
@@ -72,6 +72,9 @@ export default function BiographyPage() {
           <p className="mt-2 text-base text-crimson-deep">
             Specialist in TAVR and Watchman (LAAO)
           </p>
+          <p className="mt-1 text-base text-crimson-deep">
+            Vein ablation for peripheral vascular disease
+          </p>
         </Reveal>
         <div>
           <Reveal>
@@ -81,12 +84,14 @@ export default function BiographyPage() {
                 Heart & Valve Specialists. With a focus on interventional
                 cardiology, peripheral vascular disease, and structural heart
                 disease, Dr. Ahmed is committed to providing exceptional care
-                to patients throughout Conroe, The Woodlands, and Willis, Texas.
+                to patients throughout Conroe, The Woodlands, Willis, and Spring,
+                Texas.
               </p>
               <p>
                 Dr. Ahmed is a specialist in TAVR (transcatheter aortic valve
                 replacement) and Watchman (left atrial appendage occlusion)
-                procedures.
+                procedures. He treats peripheral vascular disease and performs
+                vein ablation.
               </p>
               <p>
                 Dr. Ahmed completed rigorous fellowship training at several

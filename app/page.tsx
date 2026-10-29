@@ -22,7 +22,7 @@ export default function HomePage() {
       <section className="mx-auto grid w-full min-w-0 max-w-[1360px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
         <Reveal className="min-w-0">
           <Badge variant="outline" className="h-7 border-line px-3 text-crimson-deep">
-            Conroe · The Woodlands · Willis
+            Conroe · The Woodlands · Willis · Spring
           </Badge>
           <h1 className="mt-6 max-w-xl text-[clamp(2.75rem,11vw,4.4rem)] leading-[0.95] tracking-tight text-balance text-navy">
             Where your heart, matters.
@@ -103,12 +103,13 @@ export default function HomePage() {
               & Valve Specialists. With a focus on interventional cardiology,
               peripheral vascular disease, and structural heart disease, Dr.
               Ahmed & Dr. Mobley are committed to providing exceptional care to
-              patients throughout Conroe and The Woodlands, Texas.
+              patients throughout Conroe, The Woodlands, Willis, and Spring, Texas.
             </p>
             <p>
               Dr. Ahmed is a specialist in TAVR (transcatheter aortic valve
               replacement) and Watchman (left atrial appendage occlusion)
-              procedures.
+              procedures. He treats peripheral vascular disease and performs
+              vein ablation.
             </p>
             <p>
               With a passion for improving patient outcomes and a dedication to
@@ -158,10 +159,10 @@ export default function HomePage() {
             {featuredProcedures.map((procedure, index) => (
               <Reveal key={procedure} delay={index * 0.08}>
                 <div className="border border-white/20 bg-white/10 px-6 py-8 backdrop-blur-sm">
-                  <p className="text-xs tracking-[0.16em] text-blush-soft uppercase">
-                    0{index + 1}
+                  <h3 className="text-2xl leading-snug">{procedure}</h3>
+                  <p className="mt-3 text-base leading-7 text-cream/85">
+                    For peripheral vascular disease.
                   </p>
-                  <h3 className="mt-4 text-2xl leading-snug">{procedure}</h3>
                 </div>
               </Reveal>
             ))}
